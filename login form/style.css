@@ -1,0 +1,110 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 400px !important;
+    border-radius: 20px;
+}
+
+.card {
+    border-radius: 20px !important;
+    height: 600px !important;
+    background-image: linear-gradient(to right, #0084ff, #00f2ff);
+    border: none !important;
+    overflow: hidden;
+    box-shadow: 0px 5px 8px #41414161;
+    z-index: 0;
+}
+
+.circle{
+    position: absolute;
+    bottom: -230px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    clip-path: circle(50%);
+    height: 700px;
+    width: 700px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.myHed{
+    margin-top: 30px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #0084ff, #00f2ff);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.far {
+    font-size: 40px;
+}
+
+.fas{
+    position: relative;
+    display: block;
+    left: -100px;
+    top: 33px;
+    color: #fff;
+}
+
+.button{
+    width: 200px !important;
+    border-radius: 25px !important;
+    background-image: linear-gradient(to right, #0084ff, #00f2ff);
+    color: #fff !important;
+    font-weight: 700 !important;
+    cursor: pointer;
+    border: none !important;
+}   
+
+.myInput{
+    width: 250px !important;
+    padding: 10px;
+    padding-left: 40px;
+    border-radius: 25px;
+    border: none;
+    color: #fff !important;
+    background-image: linear-gradient(to right, #0084ff, #00f2ff);
+    display: block;
+}
+
+.myInput::placeholder{
+    color: #fff;
+    opacity: 0.8;
+}
+
+.myInput:focus{
+    border: none !important;
+    outline: none !important;
+}
+
+.check_1{
+    font-weight: 500;
+    color: rgb(85,85,85) !important;
+    font-size: 0.9rem;
+    margin: 15px auto;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 100%;
+    }
+}
